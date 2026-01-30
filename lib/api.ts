@@ -1,7 +1,7 @@
 import axios from "axios";
 import { AnalysisResult } from "@/components/chat/analysis-dashboard";
 
-const API_URL = "http://localhost:8000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export const api = {
     analyzeMessage: async (text: string): Promise<AnalysisResult> => {
