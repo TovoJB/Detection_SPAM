@@ -78,6 +78,42 @@ https://drive.google.com/uc?export=download&id=1bm32nrmEkfmNakLl3UA4MAyrEjaGXrUC
 ## 🚀 Comment lancer le projet
 
 Ce projet nécessite de lancer deux serveurs simultanément (Backend et Frontend).
+Nous avons créé un script pour simplifier cette tâche.
+
+### 1. Lancer l'application (Backend + Frontend)
+Exécutez simplement le script suivant à la racine du projet :
+
+```bash
+chmod +x start_app.sh
+./start_app.sh
+```
+
+Cela va :
+1. Démarrer le serveur Backend (FastAPI) sur le port 8000.
+2. Démarrer le serveur Frontend (Next.js) sur le port 3000.
+
+L'application sera accessible à l'adresse : **http://localhost:3000**
+
+### Arrêter l'application
+Appuyez simplement sur `Ctrl + C` dans le terminal pour arrêter les deux serveurs.
+
+### Pré-requis
+Assurez-vous d'avoir installé les dépendances avant le premier lancement :
+
+**Backend :**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python -m spacy download fr_core_news_sm
+cd ..
+```
+
+**Frontend :**
+```bash
+pnpm install
+```
 
 ### Etape 1 : Lancer le Backend (Machine Learning API)
 Le backend gère l'analyse des messages. Il doit être lancé en premier.
