@@ -86,7 +86,7 @@ export function ChatInputBox({
                 >
                   <CircleDashedIcon className="size-4 text-muted-foreground" />
                   <span className="hidden sm:inline text-sm text-muted-foreground/70">
-                    fuck you
+                    test
                   </span>
                 </Button>
               </>

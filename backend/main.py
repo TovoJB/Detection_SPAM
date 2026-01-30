@@ -28,7 +28,3 @@ def predict_spam(input: MessageInput):
     
     result = classifier.predict(input.text)
     return result
-
-@app.on_event("startup")
-def startup_event():
-    classifier.load_model()
