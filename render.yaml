@@ -21,9 +21,12 @@ services:
     buildCommand: pnpm install && pnpm build
     startCommand: pnpm start
     envVars:
-      - key: NEXT_PUBLIC_API_URL
+    envVars:
+      - key: API_BACKEND_URL
         fromService:
           type: web
           name: spam-classifier-backend
-          property: url
+          property: hostport
+      - key: NEXT_PUBLIC_API_URL
+        value: "/api" # Explicitly tell frontend to use relative path (though api.ts defaults to it)
     autoDeploy: false

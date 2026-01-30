@@ -1,7 +1,8 @@
 import axios from "axios";
 import { AnalysisResult } from "@/components/chat/analysis-dashboard";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// Use relative path because Next.js Rewrites (proxy) will handle redirection to backend
+const API_URL = "/api";
 
 export const api = {
     analyzeMessage: async (text: string): Promise<AnalysisResult> => {
