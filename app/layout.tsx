@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Square AI - Chat Interface",
+  title: "Spam/Ham Detector",
   description: "A modern AI chat interface built with Next.js and shadcn/ui",
 };
 
