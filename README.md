@@ -1,5 +1,8 @@
 Institut Supérieur Polytechnique de Madagascar - ISPM
-Site web : www.ispm-edu.com 
+Site web          : www.ispm-edu.com 
+Site demo         : https://huggingface.co/spaces/Tovo101/Spam-ham-classifier
+Site huggingface  : https://front-end-gilt-xi.vercel.app/) 
+
 
 # Les membres du groupe
 TOVO Jean Bien Aimé , 
